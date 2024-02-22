@@ -1,4 +1,3 @@
-.
 var version = "1.7-rewardads-v0.5";
 console.log("cmgAds cmg-ads.js loaded", version);
 
@@ -275,7 +274,7 @@ const styles = `
 var styleElement = document.createElement("style");
 styleElement.innerHTML = styles;
 document.head.appendChild(styleElement);
-var adBreakInterval = 180000; // Change to 180000 for live
+var adBreakInterval = 180000e55; // Change to 180000 for live
 var gameInterstitialAdTimerDone = false;
 var gameInterstitialAdTimer;
 var adLoadedTimer;
@@ -289,7 +288,7 @@ var cmgAInvD = false;
 var adsManager;
 var reInitCounter = 0;
 
-var validSubscriber = false;
+var validSubscriber = true;
 window.addEventListener('message', function(event) {
     //console.log("Message received from the parent: " + event.data);
     if(/(www|stage|stage-edit|dev|stage2).coolmathgames.com/i.test(event.origin) && event.data == "valid-subscriber") {
